@@ -73,4 +73,4 @@ Each relation can include metadata qualifiers to preserve historical ambiguity.
 
 ### Project
 
-This graph is part of **Chronos. Chronos mines overlooked historical texts to generate novel, testable hypotheses using LLMs and structured graph reasoning.
+This toy example is part of Chronos. Chronos mines overlooked historical texts to generate novel, testable hypotheses using LLMs and structured graph reasoning.
