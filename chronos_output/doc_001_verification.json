@@ -1,0 +1,46 @@
+{
+  "document_context": "Historical medical manuscript",
+  "total_claims": 2,
+  "verifications": [
+    {
+      "source": "MIT Introduction to Probability and Statistics",
+      "relationship": "CONTAINS",
+      "target": "Counting & Combinatorics",
+      "claim_text": "MIT Introduction to Probability and Statistics contains Counting & Combinatorics",
+      "original_claim": "MIT Introduction to Probability and Statistics contains Counting & Combinatorics",
+      "modern_hypothesis": "MIT Introduction to Probability and Statistics contains Counting & Combinatorics",
+      "key_variables": [],
+      "search_terms": [
+        "MIT Introduction to Probability and Statistics contains Counting & Combinatorics"
+      ],
+      "modern_context": "Error: 'str' object has no attribute 'get'",
+      "evidence": [],
+      "verification": {
+        "verified": false,
+        "confidence": 0.0,
+        "summary": "No scientific evidence found",
+        "recommendation": "Further research needed"
+      }
+    },
+    {
+      "source": "MIT Introduction to Probability and Statistics",
+      "relationship": "CONTAINS",
+      "target": "Basic Probability",
+      "claim_text": "MIT Introduction to Probability and Statistics contains Basic Probability",
+      "original_claim": "MIT Introduction to Probability and Statistics contains Basic Probability",
+      "modern_hypothesis": "MIT Introduction to Probability and Statistics contains Basic Probability",
+      "key_variables": [],
+      "search_terms": [
+        "MIT Introduction to Probability and Statistics contains Basic Probability"
+      ],
+      "modern_context": "Error: 'str' object has no attribute 'get'",
+      "evidence": [],
+      "verification": {
+        "verified": false,
+        "confidence": 0.0,
+        "summary": "No scientific evidence found",
+        "recommendation": "Further research needed"
+      }
+    }
+  ]
+}
