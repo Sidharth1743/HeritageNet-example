@@ -349,23 +349,28 @@ Begin extraction:"""
     def process_file(self, file_path: str, **kwargs) -> str:
         """
         Automatically detect file type and extract text.
-        
+
         Args:
             file_path: Path to PDF or image file
             **kwargs: Additional arguments passed to process_pdf or process_image
-        
+
         Returns:
             Extracted text
         """
         if not os.path.exists(file_path):
             return f"❌ Error: File not found at '{file_path}'"
-        
+
         _, file_extension = os.path.splitext(file_path.lower())
-        
+
         if file_extension == '.pdf':
             return self.process_pdf(file_path, **kwargs)
         elif file_extension in ['.png', '.jpg', '.jpeg', '.webp', '.bmp', '.tiff', '.tif']:
-            return self.process_image(file_path, **kwargs)
+            # Filter out PDF-only parameters before passing to process_image
+            image_kwargs = {
+                k: v for k, v in kwargs.items()
+                if k in ['use_preprocessing', 'enhancement_level', 'medical_context', 'save_debug_images']
+            }
+            return self.process_image(file_path, **image_kwargs)
         else:
             return f"Unsupported file type for OCR: '{file_extension}'."
 
